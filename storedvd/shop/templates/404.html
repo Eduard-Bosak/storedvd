@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block title %}<title>Страница не найдена - 404</title>{% endblock %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+{% block description %}<meta name="description" content="Запрошенная страница не существует." />{% endblock %}
+{% block keywords %}
+<meta name="keywords" content="страница не найдена,запрошенная страница,404" />
+{% endblock %}
+{% block content %}
+<div id="message">
+	<h2>Страница не существует</h2>
+	<p>Страница не найдена,проверь введенный адрес!<br />Вернуться на <a href="{% url 'index' %}">главную</a>.</p>
+
+</div>
+{% endblock %}
